@@ -1,9 +1,9 @@
 package Semana3.atributos;
 
 public class Cliente {
-    double peso;
-    double altura;
-    String idade;
+   public double peso;
+    public double altura;
+    public String idade;
 
     public String IMC( Double peso, Double altura) {
 
