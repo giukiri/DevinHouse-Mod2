@@ -1,9 +1,22 @@
 package Semana3.atributos;
 
+import java.util.List;
+
 public class Cliente {
    public double peso;
     public double altura;
     public String idade;
+
+    public Cliente(Double altura, Double peso){
+        this.altura=altura;
+        this.peso = peso;
+    }
+
+    private Cliente (Double peso, Double altura, String idade){
+        this.peso=peso;
+        this.altura=altura;
+        this.idade=idade;
+    }
 
     public String IMC( Double peso, Double altura) {
 

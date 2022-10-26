@@ -15,4 +15,8 @@ public class Clinica {
         listaDeClientes.add(cliente);
     }
 
+    public Clinica(List<Cliente>listaDeClientes, String donoClinica){
+        this.listaDeClientes=listaDeClientes;
+        this.donoClinica = donoClinica;
+    }
 }
