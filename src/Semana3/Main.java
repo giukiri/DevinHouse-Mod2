@@ -12,11 +12,13 @@ public class Main {
         Cliente cliente = new Cliente(1.75,60.0);
 
 
-        Clinica clinica = new Clinica(new ArrayList<>(),"joao");
+        Clinica clinica = new Clinica("joao");
 
         clinica.listaDeClientes.add(cliente);
 
         clinica.categorizarClientes();
+
+
         }
 
     }

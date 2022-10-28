@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Clinica {
 
-     String donoClinica;
+     private String donoClinica;
     List<Cliente> listaDeClientes = new ArrayList<>();
 
     public void categorizarClientes(){
@@ -49,12 +49,12 @@ public class Clinica {
         }
 
 
-    public void addCliente(Cliente cliente){
+ private void addCliente(Cliente cliente){
         listaDeClientes.add(cliente);
     }
 
-    public Clinica(List<Cliente>listaDeClientes, String donoClinica){
-        this.listaDeClientes=listaDeClientes;
+    public Clinica( String donoClinica){
+
         this.donoClinica = donoClinica;
     }
 }
