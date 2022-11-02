@@ -1,25 +1,29 @@
 package Semana3;
 
 
-import Semana3.atributos.Cliente;
-
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+
 
 public class Main {
-    public static void main(String [] args){
-
-        Cliente cliente = new Cliente(1.75,60.0);
-
-
-        Clinica clinica = new Clinica("joao");
-
-        clinica.listaDeClientes.add(cliente);
-
-        clinica.categorizarClientes();
-
-
+    public static void main(String [] args) {
+        System.out.println("Nome | IMC | Categoria");
+        Clinica clinica = new Clinica("joao", "ooo");
+        List<Cliente> listaClientes = new ArrayList<>();
+        clinica.listarClientes(listaClientes);
+        Map<String,List<Cliente>> mapaImc = clinica.categorizarClientesEmIMC(listaClientes);
+        for(String categoria : mapaImc.keySet()){
+            List<Cliente> lista = mapaImc.get(categoria);
+            for( Cliente c: lista ){
+                System.out.println(categoria + " " + c.getNome() + " " + c.getResultadoimc());
+            }
         }
 
     }
+
+
+
+}
 
