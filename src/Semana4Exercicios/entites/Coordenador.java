@@ -17,4 +17,9 @@ public class Coordenador extends Pessoa{
        this.quantidadeCursosCoord = quantidadeCursosCoord;
 
     }
+
+    @Override
+    public void obterInformacoes() {
+        super.obterInformacoes();
+    }
 }

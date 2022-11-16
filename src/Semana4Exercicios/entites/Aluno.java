@@ -30,4 +30,9 @@ public class Aluno extends Pessoa{
         this.matricula= matricula;
 
     }
+
+    @Override
+    public void obterInformacoes() {
+        super.obterInformacoes();
+    }
 }

@@ -18,4 +18,9 @@ public class Mentor extends Pessoa{
 
 
     }
+
+    @Override
+    public void obterInformacoes() {
+        super.obterInformacoes();
+    }
 }

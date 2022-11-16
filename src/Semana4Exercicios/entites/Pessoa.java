@@ -28,4 +28,9 @@ public class Pessoa {
         this.idade=idade;
         this.name=name;
     }
+
+    public void obterInformacoes(){
+        getIdade();
+        getName();
+    }
 }
