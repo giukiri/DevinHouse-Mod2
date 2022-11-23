@@ -28,11 +28,11 @@ public class Aluno extends Pessoa{
         super(name,idade);
         this.curso=curso;
         this.matricula= matricula;
-
     }
 
     @Override
-    public void obterInformacoes() {
-        super.obterInformacoes();
+    public String  obterInformacoes() throws Exception {
+        String info = super.obterInformacoes();
+        return info + getCurso() + getMatricula();
     }
 }
